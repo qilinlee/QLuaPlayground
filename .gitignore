@@ -1,0 +1,26 @@
+#ignore directory
+/.vs/*
+/Bin/*
+/Intermediate/*
+
+
+# Explcitly ignore Mac DS_Store files, regardless of where they are
+.DS_Store
+
+# Ignore VS / VS Code settings directory
+.vs
+.vscode
+
+# Ignore VS Obj/pdb
+*.iobj
+*.ipdb
+*.pdb
+*.ilk
+*.vcxproj.user
+
+# Ignore CLion directory
+.idea/
+
+# Annoying windows files
+[Dd]esktop.ini
+/bak

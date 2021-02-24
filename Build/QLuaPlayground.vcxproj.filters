@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\QLuaPlayground\QLuaPlayground.cpp" />
+    <ClCompile Include="..\src\QLuaPlayground\main.cpp" />
+    <ClCompile Include="..\src\QLuaPlayground\Util\StringUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\QLuaPlayground\QLuaPlayground.h" />
+    <ClInclude Include="..\src\QLuaPlayground\Util\StringUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Util">
+      <UniqueIdentifier>{7f798817-67fd-437d-b702-74b61e18dd63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
