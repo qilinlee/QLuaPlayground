@@ -2,14 +2,16 @@
 //
 
 #include <iostream>
+#include <vector>
 #include "QLuaPlayground.h"
-
+#include "IQLPScript.h"
 
 namespace QLP
 {
 	lua_State* g_lusState = nullptr;
 	std::string LuaSourcePath;
 	std::string ProjectPath;
+	std::vector<IQLPScript*> CSamples;
 	bool InitLuaEnv(const char* path)
 	{
 		if (g_lusState)
@@ -25,6 +27,14 @@ namespace QLP
 			if (path && strlen(path) > 0)
 			{
 				AddLuaPackagePath(path);
+			}
+		}
+
+		for (int i = 0; i < CSamples.size(); ++i)
+		{
+			if (CSamples[i])
+			{
+				CSamples[i]->RegisteLuaEnv();
 			}
 		}
 
@@ -62,6 +72,22 @@ namespace QLP
 		if (g_lusState)
 		{
 			lua_close(g_lusState);
+		}
+	}
+
+	void RegisteCFun(const char* strNameFun, lua_CFunction funcLib)
+	{
+		if (g_lusState)
+		{
+			lua_register(g_lusState, strNameFun, funcLib);
+		}
+	}
+
+	void RegisterCLib(const char* strNameLib, const luaL_Reg* lib)
+	{
+		if (g_lusState)
+		{
+			luaL_newlib(g_lusState, lib);
 		}
 	}
 

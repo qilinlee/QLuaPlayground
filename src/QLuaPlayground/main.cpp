@@ -4,6 +4,8 @@
 #include <vector>
 #include "QLuaPlayground.h"
 #include "Util/StringUtil.h"
+#include "IQLPScript.h"
+#include "TraverseTable.h"
 
 std::string strLuaSourcePath;
 std::string strCurWorkPath;
@@ -111,6 +113,10 @@ int main()
 	}
 	
 	EnumLuaTests(strLuaSourcePath);
+
+	QLPTraverseTable sampleTraverseTable;
+	QLP::CSamples.push_back(&sampleTraverseTable);
+	sampleTraverseTable.RegisteLuaEnv();
 
 	while (true)
 	{

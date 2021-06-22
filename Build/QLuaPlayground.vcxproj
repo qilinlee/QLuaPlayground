@@ -21,10 +21,13 @@
   <ItemGroup>
     <ClCompile Include="..\src\QLuaPlayground\main.cpp" />
     <ClCompile Include="..\src\QLuaPlayground\QLuaPlayground.cpp" />
+    <ClCompile Include="..\src\QLuaPlayground\TraverseTable.cpp" />
     <ClCompile Include="..\src\QLuaPlayground\Util\StringUtil.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\QLuaPlayground\IQLPScript.h" />
     <ClInclude Include="..\src\QLuaPlayground\QLuaPlayground.h" />
+    <ClInclude Include="..\src\QLuaPlayground\TraverseTable.h" />
     <ClInclude Include="..\src\QLuaPlayground\Util\StringUtil.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

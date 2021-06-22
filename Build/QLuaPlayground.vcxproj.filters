@@ -6,12 +6,15 @@
     <ClCompile Include="..\src\QLuaPlayground\Util\StringUtil.cpp">
       <Filter>Util</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\QLuaPlayground\TraverseTable.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\QLuaPlayground\QLuaPlayground.h" />
     <ClInclude Include="..\src\QLuaPlayground\Util\StringUtil.h">
       <Filter>Util</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\QLuaPlayground\IQLPScript.h" />
+    <ClInclude Include="..\src\QLuaPlayground\TraverseTable.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Util">
