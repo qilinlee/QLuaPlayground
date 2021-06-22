@@ -1,6 +1,7 @@
 #include <filesystem>
 #include <iostream>
 #include <string>
+#include <vector>
 #include "QLuaPlayground.h"
 #include "Util/StringUtil.h"
 
