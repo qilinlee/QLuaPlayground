@@ -24,3 +24,8 @@
 # Annoying windows files
 [Dd]esktop.ini
 /bak
+*.obj
+*.recipe
+*.log
+*.tlog
+*.idb
