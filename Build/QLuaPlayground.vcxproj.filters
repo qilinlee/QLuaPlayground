@@ -20,5 +20,19 @@
     <Filter Include="Util">
       <UniqueIdentifier>{7f798817-67fd-437d-b702-74b61e18dd63}</UniqueIdentifier>
     </Filter>
+    <Filter Include="LuaScript">
+      <UniqueIdentifier>{c997ed29-5f99-4ea7-b620-02114ed2abf3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LuaSource\TestA.lua">
+      <Filter>LuaScript</Filter>
+    </None>
+    <None Include="..\LuaSource\TestB.lua">
+      <Filter>LuaScript</Filter>
+    </None>
+    <None Include="..\LuaSource\TestTraverseTable.lua">
+      <Filter>LuaScript</Filter>
+    </None>
   </ItemGroup>
 </Project>
